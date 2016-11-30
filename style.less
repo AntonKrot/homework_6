@@ -1,0 +1,169 @@
+@bg-color: #FFFFFF;
+@font-family: "Segoe UI Light", sans-serif;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  background: @bg-color;
+
+    &:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+}
+
+.header {
+  height: 100px;
+  background: @bg-color;
+  border-bottom: 5px solid grey;
+}
+
+.logo {
+  float: left;
+  list-style-type: none;
+
+    &__link{
+      text-decoration: none;
+      font-size: 35px;
+      font-family: @font-family;
+      color: #FFFFFF;
+      text-shadow: 0 0 5px #333;
+    }
+}
+
+.menu {
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+
+    &__item {
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    &__link {
+      text-decoration: none;
+      padding: 5px 10px;
+      font-size: 20px;
+      font-family: @font-family;
+      color: #000000;
+      border: 2px solid #333333;
+      margin: 0 60px;
+
+      &:hover {
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-family: @font-family;
+        color: #888;
+        border: 2px solid #666;
+      }
+    }
+}
+
+.sidebar {
+  background: @bg-color;
+  float: left;
+  width: 259px;
+  border-right: 1px solid grey;
+
+    &__menu {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      list-style-type: none;
+      display: block;
+      padding: 5px 10px;
+
+      &:hover {
+        color: #000;
+        background: #e3e3e3;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      padding: 5px 10px;
+      font-size: 20px;
+      font-family: @font-family;
+      color: #000000;
+      margin: 0 40px;
+    }
+}
+
+.content {
+  background: @bg-color;
+  margin-left: 260px;
+  padding-bottom: 100px;
+  margin-top: -15px;
+  font-size: 16px;
+  font-family: @font-family;
+
+    &__li {
+      list-style-type:none;
+      border-bottom: 1px solid grey;
+    }
+
+    &__h1 {
+      margin: 10px 0 0 0;
+      font-family: @font-family;
+      font-size: 24px;
+    }
+
+    &__h2 {
+      margin: 0 0 10px 0;
+      font-family: @font-family;
+      font-size: 14px;
+    }
+
+    &__img {
+      float: left;
+    }
+
+    &__descr {
+      margin-left: 180px;
+    }
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+.views {
+  float: left;
+  font-family: @font-family;
+  font-size: 10px;
+  margin-top: -20px;
+}
+
+.time {
+  float: right;
+  font-family: @font-family;
+  font-size: 10px;
+  margin-top: -30px;
+  padding: 10px;
+}
+
+.footer {
+  background: @bg-color;
+  height: 100px;
+  margin-top: -100px;
+  clear: both;
+  border-top: 1px solid grey;
+}
+
+.end {
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+}
